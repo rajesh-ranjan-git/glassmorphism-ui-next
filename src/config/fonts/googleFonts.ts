@@ -448,6 +448,113 @@ import {
   Ysabeau_SC,
 } from "next/font/google";
 
+export const favoriteGoogleFonts = [
+  {
+    name: "alegreya",
+    variable: "font-alegreya",
+  },
+  {
+    name: "alkatra",
+    variable: "font-alkatra",
+  },
+  {
+    name: "arima",
+    variable: "font-arima",
+  },
+  {
+    name: "baskervville",
+    variable: "font-baskervville",
+  },
+  {
+    name: "baskervvilleSc",
+    variable: "font-baskervville-sc",
+  },
+  {
+    name: "bioRhyme",
+    variable: "font-bio-rhyme",
+  },
+  {
+    name: "caveat",
+    variable: "font-caveat",
+  },
+  {
+    name: "dancingScript",
+    variable: "font-dancing-script",
+  },
+  {
+    name: "dynaPuff",
+    variable: "font-dyna-puff",
+  },
+  {
+    name: "gluten",
+    variable: "font-gluten",
+  },
+  {
+    name: "grandstander",
+    variable: "font-grandstander",
+  },
+  {
+    name: "grenzeGotisch",
+    variable: "font-grenze-gotisch",
+  },
+  {
+    name: "josefinSlab",
+    variable: "font-josefin-slab",
+  },
+  {
+    name: "kalnia",
+    variable: "font-kalnia",
+  },
+  {
+    name: "labrada",
+    variable: "font-labrada",
+  },
+  {
+    name: "lemonada",
+    variable: "font-lemonada",
+  },
+  {
+    name: "merienda",
+    variable: "font-merienda",
+  },
+  {
+    name: "playwrite",
+    variable: "font-playwrite-ar",
+  },
+  {
+    name: "playwriteIn",
+    variable: "font-playwrite-in",
+  },
+  {
+    name: "sansitaSwashed",
+    variable: "font-sansita-swashed",
+  },
+  {
+    name: "shantellSans",
+    variable: "font-shantell-sans",
+  },
+  {
+    name: "sourGummy",
+    variable: "font-sour-gummy",
+  },
+  {
+    name: "tiltPrism",
+    variable: "font-tilt-prism",
+  },
+  {
+    name: "tourney",
+    variable: "font-tourney",
+  },
+  {
+    name: "unbounded",
+    variable: "font-unbounded",
+  },
+  {
+    name: "vollkorn",
+    variable: "font-vollkorn",
+  },
+];
+
 export const googleFonts = [
   {
     name: "arOneSans",
