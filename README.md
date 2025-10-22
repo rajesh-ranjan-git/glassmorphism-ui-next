@@ -3,3 +3,4 @@
 ## Lets build glassmorphism themed components using Next JS!
 
 - [x] Animated Background
+- [x] Animated Glowing Buttons
