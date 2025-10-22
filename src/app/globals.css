@@ -3,3 +3,21 @@
 @theme inline {
   --font-alkatra: var(--font-alkatra);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+/* --- Animations --- */
+
+@keyframes spinBlob {
+  0% {
+    transform: rotate(0deg) scale(2);
+  }
+  100% {
+    transform: rotate(1turn) scale(2);
+  }
+}
