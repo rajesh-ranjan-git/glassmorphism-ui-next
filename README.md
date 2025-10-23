@@ -7,5 +7,5 @@
 - [x] Animated Glowing Buttons
 - [x] User Card
 - [x] Login Page
-- [ ] Social Media Icons
+- [x] Social Media Icons
 - [ ] Animated Theme Toggler Button
