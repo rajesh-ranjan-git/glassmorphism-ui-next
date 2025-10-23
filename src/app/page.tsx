@@ -1,5 +1,7 @@
-import Main from "@/components/main/main";
-
 export default function Home() {
-  return <Main />;
+  return (
+    <div className="flex justify-center items-center min-h-screen font-alkatra text-5xl">
+      Glassmorphism UI
+    </div>
+  );
 }
