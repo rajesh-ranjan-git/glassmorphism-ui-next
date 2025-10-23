@@ -8,4 +8,4 @@
 - [x] User Card
 - [x] Login Page
 - [x] Social Media Icons
-- [ ] Animated Theme Toggler Button
+- [x] Animated Theme Switch
