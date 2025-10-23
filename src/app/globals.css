@@ -3,3 +3,198 @@
 @theme inline {
   --font-alkatra: var(--font-alkatra);
 }
+
+
+
+body {
+  overflow: hidden;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+}
+
+section .color {
+  position: absolute;
+  filter: blur(9rem);
+}
+
+section .color:nth-child(1) {
+  top: -21rem;
+  width: 37.5rem;
+  height: 37.5rem;
+  background: #ff359b;
+}
+
+section .color:nth-child(2) {
+  bottom: -9rem;
+  left: 6rem;
+  width: 31rem;
+  height: 31rem;
+  background: #fffd87;
+}
+
+section .color:nth-child(3) {
+  bottom: -3rem;
+  right: 6rem;
+  width: 18rem;
+  height: 18rem;
+  background: #00d2ff;
+}
+
+.box {
+  position: relative;
+}
+
+.box .square {
+  position: absolute;
+  backdrop-filter: blur(0.3rem);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1.5rem 2.8rem rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.6rem;
+  animation: animate 10s linear infinite;
+  animation-delay: calc(-1s * var(--i));
+}
+
+.box .square:nth-child(1) {
+  top: -3rem;
+  right: -3.5rem;
+  width: 6rem;
+  height: 6rem;
+}
+
+.box .square:nth-child(2) {
+  top: 9rem;
+  left: -6rem;
+  width: 7.5rem;
+  height: 7.5rem;
+  z-index: 2;
+}
+
+.box .square:nth-child(3) {
+  bottom: 3rem;
+  right: -3.5rem;
+  width: 5rem;
+  height: 5rem;
+  z-index: 2;
+}
+
+.box .square:nth-child(4) {
+  bottom: -5rem;
+  left: 6rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.box .square:nth-child(5) {
+  top: -5rem;
+  left: 8.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  z-index: 2;
+}
+
+.container {
+  position: relative;
+  width: 25rem;
+  min-height: 25rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(0.3rem);
+  box-shadow: 0 1.5rem 2.8rem rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem;
+}
+
+.form h2 {
+  position: relative;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 2.5rem;
+}
+
+.form h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.6rem;
+  width: 5rem;
+  height: 4px;
+  background: #fff;
+}
+
+.form .inputBox {
+  width: 100%;
+  margin-top: 1.2rem;
+}
+
+.form .inputBox input {
+  width: 100%;
+  margin-top: 1.2rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  outline: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #fff;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.form .inputBox input::placeholder {
+  color: #fff;
+}
+
+.form .inputBox input[type="submit"] {
+  background: #fff;
+  color: #666;
+  max-width: 6rem;
+  cursor: pointer;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+.forget {
+  margin-top: 0.3rem;
+  color: #fff;
+}
+
+.forget a {
+  color: #fff;
+  font-weight: 600;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(-2.5rem);
+  }
+
+  50% {
+    transform: translateY(2.5rem);
+  }
+}
