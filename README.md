@@ -6,6 +6,6 @@
 - [x] Animated Background
 - [x] Animated Glowing Buttons
 - [x] User Card
-- [ ] Login Page
+- [x] Login Page
 - [ ] Social Media Icons
 - [ ] Animated Theme Toggler Button
