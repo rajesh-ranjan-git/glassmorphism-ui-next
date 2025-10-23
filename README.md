@@ -1,3 +1,3 @@
 # Glassmorphism UI - Next JS
 
-## Animated Theme Toggler Button
+## Animated Theme Switch
