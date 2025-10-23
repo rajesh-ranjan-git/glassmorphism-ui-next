@@ -4,13 +4,13 @@
   --font-alkatra: var(--font-alkatra);
 }
 
-ul li a {
+.link-animation {
   transition: 0.5s;
   transition: top 0.5s, z-index 0s, transform 0.5s;
   transition-delay: 0.5s, 0.5s, 0s;
 }
 
-ul li a:hover {
+.link-animation:hover {
   transform: translateY(3rem);
   transition-delay: 0s, 0.5s, 0.5s;
 }
