@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${alkatra.variable} antialiased`}
+        className={`${alkatra.variable} antialiased overflow-hidden`}
         suppressHydrationWarning
       >
         {children}

@@ -3,3 +3,111 @@
 @theme inline {
   --font-alkatra: var(--font-alkatra);
 }
+
+section {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #ff4f8b, #dff1ff);
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 10;
+  backdrop-filter: blur(0.3rem);
+  border-top: 0.06rem solid rgba(255, 255, 255, 0.5);
+}
+
+section .color {
+  position: absolute;
+  filter: blur(9rem);
+}
+
+section .color:nth-child(1) {
+  background: #ff359b;
+  width: 37.5rem;
+  height: 37.5rem;
+  top: -22rem;
+}
+
+section .color:nth-child(2) {
+  background: #00d2ff;
+  width: 31rem;
+  height: 31rem;
+  bottom: -9rem;
+  left: 6.25rem;
+}
+
+section .color:nth-child(3) {
+  background: #fffd87;
+  width: 18.75rem;
+  height: 18.75rem;
+  bottom: 3rem;
+  right: 0;
+}
+
+ul {
+  position: relative;
+  display: flex;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  margin: 0.6rem;
+}
+
+ul li a {
+  position: relative;
+  top: 0;
+  width: 5rem;
+  height: 5rem;
+  display: inline-block;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  border: 0.06rem solid rgba(255, 255, 255, 0.4);
+  border-right: 0.06rem solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0.06rem solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0.3rem 2.8rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.25rem);
+  transition: 0.5s;
+  overflow: hidden;
+  z-index: 1;
+  transition: top 0.5s, z-index 0s, transform 0.5s;
+  transition-delay: 0.5s, 0.5s, 0s;
+}
+
+ul li a:hover {
+  top: -3rem;
+  transform: translateY(3rem);
+  transition-delay: 0s, 0.5s, 0.5s;
+  z-index: 11;
+}
+
+ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(9rem);
+  transition: 0.5s;
+}
+
+ul li a:hover::before {
+  transform: skewX(45deg) translateX(-9rem);
+}
