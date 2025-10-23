@@ -1,72 +1,17 @@
+import AnimatedBackground from "@/components/background/animatedBackground";
+import Login from "@/components/form/login";
+import AnimatedFloatingSquares from "@/components/squares/animatedFloatingSquares";
+
 export default function Home() {
   return (
-    <section>
-      <div className="color"></div>
-      <div className="color"></div>
-      <div className="color"></div>
+    <section className="flex justify-center items-center bg-[linear-gradient(to_bottom,#f1f4f9,#dff1ff)] min-h-screen font-alkatra">
+      <AnimatedBackground />
 
-      <div className="box">
-        <div
-          className="square"
-          style={
-            {
-              "--i": 0,
-            } as React.CSSProperties
-          }
-        ></div>
-        <div
-          className="square"
-          style={
-            {
-              "--i": 1,
-            } as React.CSSProperties
-          }
-        ></div>
-        <div
-          className="square"
-          style={
-            {
-              "--i": 2,
-            } as React.CSSProperties
-          }
-        ></div>
-        <div
-          className="square"
-          style={
-            {
-              "--i": 3,
-            } as React.CSSProperties
-          }
-        ></div>
-        <div
-          className="square"
-          style={
-            {
-              "--i": 4,
-            } as React.CSSProperties
-          }
-        ></div>
-        <div className="container">
-          <div className="form">
-            <h2>Login Form</h2>
-            <form>
-              <div className="inputBox">
-                <input type="text" placeholder="Username" />
-              </div>
-              <div className="inputBox">
-                <input type="password" placeholder="Password" />
-              </div>
-              <div className="inputBox">
-                <input type="submit" value="Login" />
-              </div>
-              <p className="forget">
-                Forgot password? <a href="#">Click Here</a>
-              </p>
-              <p className="forget">
-                Don't have an account? <a href="#">Sign Up</a>
-              </p>
-            </form>
-          </div>
+      <div className="relative">
+        <AnimatedFloatingSquares />
+
+        <div className="relative flex justify-center items-center bg-white/10 shadow-2xl shadow-black/10 backdrop-blur-xs border border-white/50 border-r-white/20 border-b-white/20 rounded-xl w-96 min-h-96">
+          <Login />
         </div>
       </div>
     </section>
