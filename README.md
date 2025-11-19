@@ -9,3 +9,4 @@
 - [x] Login Page
 - [x] Social Media Icons
 - [x] Animated Theme Switch
+- [ ] Animated User Swipe Card
